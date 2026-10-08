@@ -1032,3 +1032,17 @@ body[data-page="9"] {
   25% { opacity: 1; transform: translate(-50%, -50%) scale(1.25); }
   100% { opacity: 0; transform: translate(-50%, -70%) scale(1); }
 }
+
+/* group photos — high-clarity display */
+.polaroid.featured {
+  width: min(520px, 92vw);
+}
+.photo-frame.group-wide {
+  aspect-ratio: 16 / 10;
+}
+.photo-frame.hq img {
+  filter: saturate(1.08) contrast(1.05);
+}
+.photo-frame.trim-sides img {
+  transform: scale(1.18);
+}
